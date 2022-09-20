@@ -1,0 +1,84 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("endless-constellation.svg");
+    font-family: 'Nunito', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.signin-card{
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    padding: clamp(1rem, 10vw, 2rem);
+    margin: clamp(1rem, 10vw, 2rem);
+    background: rgba(105, 103, 141, 0.271);
+    backdrop-filter: blur(1rem);
+    border-radius: 0.5rem;
+    color: aliceblue;
+    box-shadow: 6px 10px 40px 2px black;
+}
+.title{
+    font-size: 2rem;
+}
+.subtitle{
+    margin: -1.5rem auto 1rem;
+}
+
+.floating-group{
+ position: relative;
+}
+.flating-label{
+    position:absolute;
+    top:50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: 12px;
+    transition:color 250ms ease-in-out, top 250ms ease-in-out;
+}
+
+input{
+    border: 0px solid rgba(12, 7, 76, 0.537);
+    background-color: rgba(12, 7, 76, 0.537);
+    border-radius: 10px;
+    color: aliceblue;
+    font:inherit;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+
+input:focus{
+    border: 2px solid blueviolet;
+    outline: none;
+  }
+input:focus + .flating-label,
+input:valid+ .flating-label{
+    top: -1rem;
+    color:blueviolet;
+}
+
+input[type="submit"]{
+    padding: 0.5rem;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid rgba(12, 7, blueviolet);
+  
+}
+input[type="submit"]:hover{
+    box-shadow: 2px 1px 2px rgb(12, 7, 76);
+    cursor:pointer; 
+}
+input[type="submit"]:active{
+    transform: translate(0.2rem, 0.2rem);
+}
