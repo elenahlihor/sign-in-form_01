@@ -13,23 +13,29 @@
 </head>
 <body>
     <main>
-            <form class="signin-card" action="#">
+            <form class="signin-card" id="signin-card" action="/">
                 <div class="title">Welcome</div>
                 <div class="subtitle">Let's create your account!</div>
                 <div class="floating-group">
-                    <input type="text" id="fname" name="fname" required autocomplete="given-name"> 
-                    <label class="flating-label" for="fname">First name</label>
-                </div>
-                <div class="floating-group">
-                    <input type="text" id="lname" name="lname" required autocomplete="family-name"> 
-                    <label class="flating-label" for="lname">Last name</label>
+                    <input type="text" id="name" name="name" required autocomplete> 
+                    <label class="flating-label" for="fname">Name</label>
                 </div>
                 <div class="floating-group">
                     <input type="email" id="email" name="email" required autocomplete="email"> 
                     <label class="flating-label" for="email">Email address</label>
                 </div>
-                    <input type="submit" value="Sign in" >
+                <div class="floating-group">
+                    <input type="password" id="password" name="password" required> 
+                    <label class="flating-label" for="password">Password</label>
+                </div>
+                <small id="error">
+
+                </small>
+                
+                <input type="submit" value="Sign in">
             </form>
 </main>
+<script src="script.js"></script>
+   
 </body>
 </html>

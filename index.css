@@ -25,9 +25,11 @@ body{
     color: aliceblue;
     box-shadow: 6px 10px 40px 2px black;
 }
+
 .title{
     font-size: 2rem;
 }
+
 .subtitle{
     margin: -1.5rem auto 1rem;
 }
@@ -35,6 +37,7 @@ body{
 .floating-group{
  position: relative;
 }
+
 .flating-label{
     position:absolute;
     top:50%;
@@ -54,11 +57,11 @@ input{
     width: 100%;
 }
 
-
 input:focus{
     border: 2px solid blueviolet;
     outline: none;
-  }
+}
+
 input:focus + .flating-label,
 input:valid+ .flating-label{
     top: -1rem;
@@ -73,12 +76,13 @@ input[type="submit"]{
     font-size: 14px;
     outline: none;
     border: 1px solid rgba(12, 7, blueviolet);
-  
 }
+
 input[type="submit"]:hover{
     box-shadow: 2px 1px 2px rgb(12, 7, 76);
     cursor:pointer; 
 }
+
 input[type="submit"]:active{
     transform: translate(0.2rem, 0.2rem);
 }
